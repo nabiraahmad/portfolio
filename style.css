@@ -1,0 +1,723 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@200;900&display=swap&family=Nunito+Sans:opsz,wght@6..12,600&display=swap');
+/* used cursor from open source */
+*{
+  cursor: url(https://assets.codepen.io/210284/hand-cursor_32.svg), default;
+}
+
+.animation-container {
+    text-align: center;
+}
+
+.animation {
+    width: 20px;
+    height: 20px;
+    position: relative;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    margin-bottom: 3px;
+    display: inline-block;
+    margin-top: 20px;
+    margin-right: 30px;
+}
+
+.animation1 {
+    background-color: #ff00ff;
+    animation-name: example1;
+}
+
+.animation2 {
+    background-color: white;
+    animation-name: example2;
+}
+.animation3{
+  background-color: #00FF00;
+    animation-name: example3;
+}
+
+@keyframes example1 {
+    0% { left: 0px; top: 0px; }
+    25% { left: -55px; top: 0px; }
+    50% { left: 25px; top: 55px; }
+    75% { left: 55px; top: 55px; }
+    100% { left: 0px; top: 0px; }
+}
+
+@keyframes example2 {
+    0% { left: 0px; top: 0px; }
+    25% { left: 10px; top: 0px; }
+    50% { left: 25px; top: 55px; }
+    75% { left: 0px; top: 55px; }
+    100% { left: 0px; top: 0px; }
+}
+
+@keyframes example3 {
+    0% { left: 0px; top: 0px; }
+    25% { left: 55px; top: 0px; }
+    50% { left: 25px; top: 55px; }
+    75% { left: -55px; top: 55px; }
+    100% { left: 0px; top: 0px; }
+}
+
+
+.index-body{
+    background-image: url('backg.gif');
+    margin: 0;
+    padding: 0;
+    font-family: 'Noto Serif TC', serif;
+
+}
+.dropdown {
+    position: relative;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+    background-color:  rgba(255, 0, 255, 0.6);
+    font-size: 12px;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: transparent; /* Set initial background color to transparent */
+    z-index: 100;
+    left: 0;
+    top: 100%;
+    font-size: 12px;
+}
+
+.navbar ul li .dropdown-content a {
+    color: #fff;
+    text-decoration: none;
+    padding: 12px 16px;
+    display: block;
+    transition: background-color 0.3s, color 0.3s;
+    font-size: 12px;
+}
+
+.navbar ul li .dropdown-content a:hover {
+    color: black; /* Change text color on hover */
+    font-size: 12px;
+}
+.navbar {
+    font-family 'Noto Serif TC', serif;;
+    background-color: transparent;
+    color: #fff;
+    padding: 10px 0;
+    text-align: center;
+    position: fixed;
+    width: 100%;
+    font-size: px;
+    top: 0;
+    z-index: 1000;
+}
+
+.navbar ul {
+    list-style: none;
+    padding: 0;
+    font-weight: bolder;
+}
+
+.navbar ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+.navbar ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    transition: font-size 0.3s, color 0.3s;
+}
+
+.navbar ul li a:hover {
+  color: #ff00ff;
+  font-size: 25px;
+}
+.content {
+    text-align: center;
+    margin: 50px;
+}
+
+.footer {
+    background-color: transparent;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    font-family: 'Noto Serif TC', serif;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: bold;
+  }
+
+.footer-left {
+    text-align: left;
+    height: 50px; /* Set a fixed height for the left side */
+    line-height: 50px; 
+}
+
+.footer-links {
+    text-align: right;
+}
+
+.footer-links a {
+  transition: font-size 0.3s,color 0.3s;
+    margin-left: 20px;
+    text-decoration: none;
+    color: white;
+}
+
+.footer-links a:hover {
+  color: #ff00ff;
+  font-size: 25px;
+}
+
+.container {
+    display: flex;
+    margin-top: 0px;
+}
+
+.left-column {
+    width: 20%;
+    padding: 20px;
+}
+
+.right-column {
+
+    width: 80%; /* Reduce the width to 70% */
+    margin-top: 20px;
+    margin-right: 30px;
+    padding: 20px;
+}
+
+.section {
+    border-radius: 20px;
+    margin-bottom: 30px; /* Add some space between sections */
+    padding: 10px;
+}
+
+#right-h1{
+  color: white;
+  text-align: center;
+  margin-top: 200px;
+  font-size: 40px;
+  font-weight: bolder;
+  text-shadow: 3px 3px 10px rgba(0, 255, 0, 0.7);
+}
+
+.right-column ul li{
+  font-size: 18px;
+  color: black;
+  font-weight: bold;
+}
+.about-me {
+    margin: 5px;
+    padding: 15px;
+    font-weight: bold;
+    text-shadow: 0px 0px 5px rgba(0, 0, 0, 0.7);
+}
+
+.academic-aspirations {
+    margin: 5px;
+    padding: 15px;
+    font-weight: bold;
+    background-color: rgba(0, 0, 0, 0.5); 
+}
+
+.passions {
+    margin: 5px;
+    padding: 15px;
+    font-weight: bold;
+    background-color: rgba(255, 255, 255, 0.3); 
+}
+
+.future-aspirations {
+    margin: 5px;
+    padding: 15px;
+    font-weight: bold;
+    background-color: rgba(0, 0, 0, 0.5); 
+    color: white;
+}
+
+.subhead {
+  color: #00FF00;
+  text-shadow: 5px 5px 20px rgba(0, 0, 0, 0.7);
+}
+
+.connect {
+    margin: 5px;
+    padding: 15px;
+    font-weight: bold;
+    background-color: rgba(255, 255, 255, 0.3); 
+}
+.right-column h1,
+.right-column h2,
+.right-column p {
+    text-align: left;
+    font-size: 20px;
+}
+
+
+.right-column img {
+    display: block;
+    width: 250px;
+    margin: auto;
+}
+
+.left-column p {
+    margin: 0;
+    color: #ff00ff;
+/*    text-shadow: 0 0 5px #ff00ff, 0 0 15px #ff00ff, 0 0 25px #ff00ff, 0 0 35px #ff00ff;*/
+    text-shadow: 0 0 60px #ff00ff, 0 0 70px #ff00ff, 0 0 80px #ff00ff, 0 0 90px #ff00ff;
+    font-weight: bolder;
+    font-size: 4rem; /* Set a base font size using rem units */
+    /* Set min and max font sizes using calc and vw units */
+    font-size: calc(4rem + 2vw); /* Minimum font size (1.5rem) + viewport width */
+    max-font-size: calc(4rem + 4vw); 
+
+}
+
+.hover-container {
+    position: relative;
+    display: inline-block;
+    margin-right: 20px; /* Add margin to separate the next hover-container if needed */
+    color: white;
+}
+
+.popup-image {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translate(-50%, 10px);
+    background-color: #fff;
+    padding: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.hover-container:hover .popup-image {
+    display: block;}
+
+.index-p {
+    font-size: 18px;
+    color: white;
+    margin-top: 0px;
+    text-align: center;
+}
+.glitchbackground:hover{
+  background-image: url('staticrainbow.webp');
+  color: transparent;
+  -webkit-background-clip: text; /* For webkit browsers like Chrome and Safari */
+    background-clip: text;
+}
+
+/* Resume styling */
+
+.resume-navbar {
+    font-family: 'Noto Serif TC', serif;
+    background-color: transparent;
+    color: #fff;
+    padding: 10px 0;
+    text-align: center;
+    position: fixed;
+    width: 100%;
+    font-size: px;
+    top: 0;
+    z-index: 1000;
+}
+
+
+.resume-navbar ul {
+    list-style: none;
+    padding: 0;
+    font-weight: bolder;
+}
+
+.resume-navbar ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+.resume-navbar ul li a {
+    text-decoration: none;
+    color: #1a1a1a;
+    font-weight: bold;
+    transition: font-size 0.3s, color 0.3s;
+}
+
+.resume-body{
+  background-color: #818486;
+}
+.resumehead{
+  font-weight: bolder;
+  text-align: left;
+  margin-top: 100px;
+  font-size: 40px;
+  color: #1a1a1a;
+}
+
+.resume-dropdown {
+    position: relative;
+}
+
+.resume-dropdown:hover .resume-dropdown-content {
+    display: block;
+    background-color: rgba(0, 0, 0, 0.6);
+    font-size: 12px;
+}
+
+.resume-dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: transparent;
+    z-index: 100;
+    left: 0;
+    top: 100%;
+    font-size: 12px;
+}
+.resume-navbar ul li a:hover {
+  color: #fff;
+  font-size: 25px;
+}
+.resume-navbar ul li .resume-dropdown-content a {
+    color: #fff;
+    text-decoration: none;
+    padding: 12px 16px;
+    display: block;
+    transition: background-color 0.3s, color 0.3s;
+    font-size: 12px;
+}
+
+.resume-navbar ul li .resume-dropdown-content a:hover {
+    color: black; 
+    font-size: 12px;
+}
+
+
+.animated-line {
+    width: 100%; 
+    height: 2px; 
+    background-color: #0d0d0d;
+    margin: 0 auto;
+    position: relative;
+    margin-bottom: 50px;
+    animation: expand 2s ease-in-out;
+}
+
+@keyframes expand {
+    0% {
+        width: 0; 
+        left: 50%; 
+        transform: translateX(-50%); 
+    }
+    100% {
+        width: 100%; 
+        left: 0; 
+        transform: translateX(0);
+    }
+}
+
+.resume-footer {
+    background-color: transparent;
+    color: #1a1a1a;
+    padding: 20px;
+    text-align: center;
+    font-family: 'Noto Serif TC', serif;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: bold;
+  }
+
+.resume-footer-left {
+    text-align: left;
+    height: 50px;
+    line-height: 50px; 
+}
+
+.resume-footer-links {
+    text-align: right;
+}
+
+.resume-footer-links a {
+  transition: font-size 0.3s,color 0.3s;
+    margin-left: 20px;
+    text-decoration: none;
+    color: #1a1a1a;
+}
+
+.resume-footer-links a:hover {
+  color: white;
+  font-size: 25px;
+}
+
+.resume-text{
+  font-size: 20px;
+  margin-bottom: 0px;
+}
+.resume-subhead{
+    font-weight: bold;
+  margin-bottom: 20px;
+  font-size: 25px;
+  color: #1a1a1a;
+  text-shadow: 3px 3px 5px rgba(105, 105, 105, 0.4);
+}
+
+.resume-format{
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 30px;
+}
+
+.resume-item{
+    display: flex;
+    flex-direction: column;
+}
+
+.resume-content{
+  font-size: 17px;
+  text-align: left;
+  margin-bottom: 10px;
+}
+
+/*Project 1 Page*/
+
+.proj1body{
+    font-family: 'Nunito Sans', sans-serif;
+    background-color: black;
+}
+.headcontain{
+    display: flex;
+    justify-content: center;
+}
+#tweethead {
+  color: white;
+  display: inline-block;
+  margin-top: 200px;
+  font-size: 60px;
+  text-shadow: 2px 2px 10px rgba(0, 230, 255, 0.9);
+  text-align: center;
+}
+
+.twitter-image {
+  display: inline-block;
+  vertical-align: middle; 
+  width: 100px;
+}
+
+.proj1descp {
+    color: white;
+    margin-top: 70px;
+    text-align: center;
+    font-size: 40px;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+.descp {
+    margin-top: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+    color: white;
+}
+
+.image-container {
+    margin-right: 20px;
+}
+
+.project-image {
+    width: 500px;
+}
+
+.image-text {
+    max-width: 400px;
+}
+
+  @keyframes bounce {
+  0%, 20%, 50%, 80%, 100% {
+    transform: translateY(0);
+  }
+  40% {
+    transform: translateY(-30px);
+  }
+  60% {
+    transform: translateY(-15px);
+  }
+}
+
+#tweethead img.twitter-image {
+  animation: bounce 3s infinite;
+}
+
+/* Project 2 */
+
+#imageproj2 {
+
+    width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+
+}
+#title{
+color: white;
+  margin-top: 200px;
+  font-size: 60px;
+  text-shadow: 2px 2px 10px rgba(0, 255, 0, 0.9);
+  text-align: center;
+}
+/*project 3*/
+
+.rotate-image {
+    animation: rotate 2s linear infinite; /* 2s duration, linear timing function, infinite iterations */
+}
+
+@keyframes rotate {
+    0% {
+        transform: rotate(0deg); /* Starting rotation angle */
+    }
+    100% {
+        transform: rotate(360deg); /* Ending rotation angle (360 degrees for one full rotation) */
+    }
+}
+
+#imageproj3 {
+    width: 100px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+
+}
+
+.proj3-footer-links {
+    text-align: right;
+}
+
+.proj3-footer-links a {
+  transition: font-size 0.3s,color 0.3s;
+    margin-left: 20px;
+    text-decoration: none;
+    color: white;
+}
+
+.proj3-footer-links a:hover {
+  color: #06F5B4;
+  font-size: 25px;
+}
+ 
+
+.proj3-dropdown {
+    position: relative;
+}
+
+.proj3-dropdown:hover .proj3-dropdown-content {
+    display: block;
+    background-color: #06F5B4;
+    font-size: 12px;
+}
+
+.proj3-dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: transparent;
+    z-index: 100;
+    left: 0;
+    top: 100%;
+    font-size: 12px;
+}
+.proj3-navbar ul li a:hover {
+  color: white;
+  font-size: 25px;
+}
+.proj3-navbar ul li .proj3-dropdown-content a {
+    text-decoration: none;
+    padding: 12px 16px;
+    display: block;
+    transition: background-color 0.3s, color 0.3s;
+    font-size: 12px;
+}
+
+
+.proj3-navbar ul {
+    list-style: none;
+    padding: 0;
+    font-weight: bolder;
+}
+
+.proj3-navbar ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+.proj3-navbar ul li a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    transition: font-size 0.3s, color 0.3s;
+}
+.proj3-navbar {
+    font-family: 'Noto Serif TC', serif;
+    background-color: transparent;
+    padding: 10px 0;
+    text-align: center;
+    position: fixed;
+    width: 100%;
+    font-size: px;
+    top: 0;
+    z-index: 1000;
+}
+
+.proj3-navbar ul li .proj3-dropdown-content a:hover {
+    color: black; 
+    font-size: 12px;
+}
+
+
+/* blog */
+
+.blog-container {
+    margin-top:200px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  padding: 20px;
+}
+
+.blog-post {
+  background-color: #00ff80;
+  padding: 20px;
+  margin: 20px;
+  width: 500px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.date {
+  color: #888;
+  font-style: italic;
+}
+
+.read-more {
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+  display: block;
+  margin-top: 10px;
+}
+
+.read-more:hover {
+  text-decoration: underline;
+}
+
+
+.blog-body{
+    background-color: black;
+    font-family: 'Nunito Sans', sans-serif;
+
+}
+
+
+
