@@ -1,9 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@200;900&display=swap&family=Nunito+Sans:opsz,wght@6..12,600&display=swap');
 /* used cursor from open source */
 *{
+
+cursor: url(cursormouse.png), default;
+}
+a{
   cursor: url(https://assets.codepen.io/210284/hand-cursor_32.svg), default;
 }
-
 .animation-container {
     text-align: center;
 }
